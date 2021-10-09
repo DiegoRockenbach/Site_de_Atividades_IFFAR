@@ -26,34 +26,38 @@
         <div class="col-lg-12 fundo">
           <div class="container">
             <nav class="navbar navbar-expand-lg navbar-dark">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link" href="index.php">Home</a>
-                </li>
                 <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarmenu">
                   <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarmenu">
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" id="navbarDropdown" role="button" href="#">Exercícios If-Else</a>
-                    <ul class="dropdown-menu dropdown-menu-dark">
-                      <li><a class="dropdown-item" href="index.php?pagina=a1_q1">Questão 1</a></li>
-                      <li><a class="dropdown-item" href="index.php?pagina=a1_q2">Questão 2</a></li>
-                      <li><a class="dropdown-item" href="index.php?pagina=a1_q3">Questão 3</a></li>
-                      <li><a class="dropdown-item" href="index.php?pagina=a1_q4">Questão 4</a></li>
-                      <li><a class="dropdown-item" href="index.php?pagina=a1_q5">Questão 5</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Atividade 2</a>
-                    <ul class="dropdown-menu dropdown-menu-dark">
-                      <li><a class="dropdown-item" href="#">Questão 1</a></li>
-                      <li><a class="dropdown-item" href="#">Questão 2</a></li>
-                      <li><a class="dropdown-item" href="#">Questão 3</a></li>
-                    </ul>
-                  </li>
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link" href="index.php">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" id="navbarDropdown" role="button" href="#">Exercícios If-Else</a>
+                      <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="index.php?pagina=a1_q1">Questão 1</a></li>
+                        <li><a class="dropdown-item" href="index.php?pagina=a1_q2">Questão 2</a></li>
+                        <li><a class="dropdown-item" href="index.php?pagina=a1_q3">Questão 3</a></li>
+                        <li><a class="dropdown-item" href="index.php?pagina=a1_q4">Questão 4</a></li>
+                        <li><a class="dropdown-item" href="index.php?pagina=a1_q5">Questão 5</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Exercícios de Repetição</a>
+                      <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="index.php?pagina=a2_q1">Questão 1</a></li>
+                        <li><a class="dropdown-item" href="index.php?pagina=a2_q2">Questão 2</a></li>
+                        <li><a class="dropdown-item" href="index.php?pagina=a2_q3">Questão 3</a></li>
+                        <li><a class="dropdown-item" href="index.php?pagina=a2_q4">Questão 4</a></li>
+                        <li><a class="dropdown-item" href="index.php?pagina=a2_q5">Questão 5</a></li>
+                        <li><a class="dropdown-item" href="index.php?pagina=a2_q6">Questão 6</a></li>
+                        <li><a class="dropdown-item" href="index.php?pagina=a2_q7">Questão 7</a></li>
+                      </ul>
+                    </li>
+                  </ul>
                 </div>
-              </ul>
             </nav>
           </div>
         </div>
@@ -73,8 +77,9 @@
   <footer>
     <div class="container">
       <div class="row">
-        <div class="col-lg-12">
-            <span>Diego Rockenbach 2021 &copy; - Todos os direitos reservados</span>
+        <div class="col-lg-12 col-sm-12">
+            <span>Diego Rockenbach 2021 &copy;</span>
+            <span class="d-sm-none d-md-inline"> - Todos os direitos reservados</span>
         </div>
       </div>
     </div>
