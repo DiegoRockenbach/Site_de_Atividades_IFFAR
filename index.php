@@ -77,9 +77,9 @@
   <footer>
     <div class="container">
       <div class="row">
-        <div class="col-lg-12 col-sm-12">
+        <div class="col-lg-12 col-sm-12 col-12">
             <span>Diego Rockenbach 2021 &copy;</span>
-            <span class="d-sm-none d-md-inline"> - Todos os direitos reservados</span>
+            <span class=" d-none d-md-inline"> - Todos os direitos reservados</span>
         </div>
       </div>
     </div>
