@@ -81,6 +81,7 @@ footer {
 }
 
 .img_code {
+  margin-top: 30px;
   text-align: center;
 }
 
@@ -107,4 +108,22 @@ footer {
   height: 150px;
   width: 150px;
   text-align: center;
+}
+
+.dezloto {
+  background-color: rgb(103, 3, 197);
+  height: 100px;
+  width: 100px;
+  float: left;
+  margin: 5px;
+  text-align: center;
+  padding-top: 20px;
+  border-radius: 50px;
+  font-family: Century;
+  font-size: 40px;
+  transition:transform .3s;
+}
+
+.dezloto:hover {
+  transform:scale(1.2);
 }

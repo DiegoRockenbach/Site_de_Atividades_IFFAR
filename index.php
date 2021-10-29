@@ -35,7 +35,7 @@
                       <a class="nav-link" href="index.php">Home</a>
                     </li>
                     <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" id="navbarDropdown" role="button" href="#">Exercícios If-Else</a>
+                      <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" id="navbarDropdown" role="button" href="#">Exercícios de If-Else</a>
                       <ul class="dropdown-menu dropdown-menu-dark">
                         <li><a class="dropdown-item" href="index.php?pagina=a1_q1">Questão 1</a></li>
                         <li><a class="dropdown-item" href="index.php?pagina=a1_q2">Questão 2</a></li>
@@ -54,6 +54,13 @@
                         <li><a class="dropdown-item" href="index.php?pagina=a2_q5">Questão 5</a></li>
                         <li><a class="dropdown-item" href="index.php?pagina=a2_q6">Questão 6</a></li>
                         <li><a class="dropdown-item" href="index.php?pagina=a2_q7">Questão 7</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Exercícios de Arrays</a>
+                      <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="index.php?pagina=a3_q1">Questão 1</a></li>
+                        <li><a class="dropdown-item" href="index.php?pagina=a3_q2">Questão 2</a></li>
                       </ul>
                     </li>
                   </ul>
