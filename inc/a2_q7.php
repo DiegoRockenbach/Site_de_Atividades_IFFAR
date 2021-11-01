@@ -22,41 +22,41 @@
     <div class="col-lg-6 col-sm-12">
       <?php
         if (isset($_POST["enviar"])){
-        $valor_emp = $_POST["valor_emprestimo"];
-        $quant_parc = $_POST["parcelas"];
-        if ($quant_parc == 6) {
-          $taxa = 1.2;
-        }
-        else if ($quant_parc == 12) {
-          $taxa = 1.8;
-        }
-        else if ($quant_parc == 24) {
-          $taxa = 2;
-        }
-        else if ($quant_parc == 36) {
-          $taxa = 2.5;
-        }
-        else if ($quant_parc == 48) {
-          $taxa = 2.8;
-        }
-        $taxa = $taxa / 100;
-        $cf = ($taxa/(1 - (1/pow(1+$taxa, $quant_parc))));
-        $valor_parc = $valor_emp * $cf;
-        $date = new DateTime();
-        echo "<table class='table table-sm table-dark'><thead>";
-        echo "<tr><th>Número da parcela</th><th>Data da parcela</th><th>Valor da parcela</th></tr>";
-        echo "</thead><tbody>";
-        for ($parc=1; $parc<=$quant_parc; $parc++){
-          $date->add(new DateInterval("P1M"));
-          echo "<tr><td>$parc</td>";
-          echo "<td>". $date->format("d/m/Y"). "</td>";
-          printf ("<td>R$ %.2f</td>", $valor_parc);
-          echo "</tr>";
-        }
-        echo "</tbody></table>";
-        $montante = $valor_parc * $quant_parc;
-        $juros = $montante - $valor_emp;
-        printf ("<div class='alert alert-success'> O valor de juros é igual a R$ %.2f, enquanto o montante é igual a R$ %.2f</div>", $juros, $montante);
+          $valor_emp = $_POST["valor_emprestimo"];
+          $quant_parc = $_POST["parcelas"];
+          if ($quant_parc == 6) {
+            $taxa = 1.2;
+          }
+          else if ($quant_parc == 12) {
+            $taxa = 1.8;
+          }
+          else if ($quant_parc == 24) {
+            $taxa = 2;
+          }
+          else if ($quant_parc == 36) {
+            $taxa = 2.5;
+          }
+          else if ($quant_parc == 48) {
+            $taxa = 2.8;
+          }
+          $taxa = $taxa / 100;
+          $cf = ($taxa/(1 - (1/pow(1+$taxa, $quant_parc))));
+          $valor_parc = $valor_emp * $cf;
+          $date = new DateTime();
+          echo "<table class='table table-sm table-dark'><thead>";
+          echo "<tr><th>Número da parcela</th><th>Data da parcela</th><th>Valor da parcela</th></tr>";
+          echo "</thead><tbody>";
+          for ($parc=1; $parc<=$quant_parc; $parc++){
+            $date->add(new DateInterval("P1M"));
+            echo "<tr><td>$parc</td>";
+            echo "<td>". $date->format("d/m/Y"). "</td>";
+            printf ("<td>R$ %.2f</td>", $valor_parc);
+            echo "</tr>";
+          }
+          echo "</tbody></table>";
+          $montante = $valor_parc * $quant_parc;
+          $juros = $montante - $valor_emp;
+          printf ("<div class='alert alert-success'> O valor de juros é igual a R$ %.2f, enquanto o montante é igual a R$ %.2f</div>", $juros, $montante);
         }
       ?>
     </div>

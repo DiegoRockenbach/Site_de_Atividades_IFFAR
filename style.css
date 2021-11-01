@@ -127,3 +127,7 @@ footer {
 .dezloto:hover {
   transform:scale(1.2);
 }
+
+.margintop {
+  margin-top: 20px;
+}
