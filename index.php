@@ -1,3 +1,6 @@
+<?php
+  session_start();
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -63,6 +66,22 @@
                         <li><a class="dropdown-item" href="index.php?pagina=a3_q2">Questão 2</a></li>
                       </ul>
                     </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Contas</a>
+                      <ul class="dropdown-menu dropdown-menu-dark">
+                        <?php
+                          if(isset($_SESSION['user'])) {
+                            echo "<li><a class='dropdown-item' href='index.php?pagina=logout'>Logout (".$_SESSION['user'].")</a></li>";
+                            echo "<li><a class='dropdown-item' href='index.php?pagina=listar'>Listar todos os cadastros de clientes</a></li>";
+                            echo "<li><a class='dropdown-item' href='index.php?pagina=cadastroclient'>Cadastro de clientes</a></li>";
+                          }
+                          else {
+                            echo "<li><a class='dropdown-item' href='index.php?pagina=login'>Login</a></li>";
+                            echo "<li><a class='dropdown-item' href='index.php?pagina=cadastrouser'>Criar conta</a></li>";
+                          }
+                        ?>
+                      </ul>
+                    </li>
                   </ul>
                 </div>
             </nav>
@@ -94,5 +113,6 @@
 
   <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
   <script src="bootstrap-5.0.2-dist/js/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
 </body>
 </html>

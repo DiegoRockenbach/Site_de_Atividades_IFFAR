@@ -131,3 +131,45 @@ footer {
 .margintop {
   margin-top: 20px;
 }
+
+.marginbot {
+  margin-bottom: 40px;
+}
+
+.instaimg a {
+  float: left;
+  margin-left: 20px;
+  margin-right: 5px;
+  transition:transform .3s;
+}
+
+.ttimg a {
+  float: left;
+  margin-left: 5px;
+  transition:transform .3s;
+}
+
+.gitimg a {
+  float: left;
+  margin-left: 5px;
+  margin-top: -10px;
+  transition:transform .3s;
+}
+
+.instaimg a:hover, .ttimg a:hover, .gitimg a:hover {
+  transform:scale(1.2);
+}
+
+.tablelist td, th {
+  border: 2px solid rgb(204, 116, 255);
+}
+
+.tableimg {
+  text-align: center;
+  width: 90px;
+}
+
+.smolfont {
+  font-style: italic;
+  font-size: 12px;
+}
